@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://gq85sgeohwxx"]
+
+[ext_resource type="Texture2D" uid="uid://b6btbg6ty0ttr" path="res://Everything/art/sprites/tilesets/World of Solaria Demo Pack Update 04/16x16/Tilesets/New/Solaria Demo Tiles.png" id="1_4c3mi"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aevv5"]
+texture = ExtResource("1_4c3mi")
+
+[sub_resource type="TileSet" id="TileSet_0pevx"]
+sources/0 = SubResource("TileSetAtlasSource_aevv5")
+
+[node name="outside home" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_0pevx")
+format = 2
